@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{margin: 5px;}
+
+.contenedor{display: flex;align-items: center;justify-content:center;width: 100%;}
+
+.logo{display: flex;height: 50px;width: 50px;gap: 20px;}
+
+.titulo1{font-size: 12px;color: black;margin-right: 20px;}
+
+.parrafo1{font-size: 12px;color: grey;margin-right: 20px;}
+
+.search{width: 20%;margin-right: 50px;}
+
+.input1{width: 100%;font-size: 15px;}
+
+ul,li a{font-size: 15px;text-decoration: none;color:rgb(199, 131, 4);list-style: none;}

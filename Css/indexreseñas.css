@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 10px;   
+}     
+main{
+    font-size: 15px;
+}
+/*Logo*/
+.logo{
+    display: flex;
+    justify-content: start;
+    height: 50px;
+    width: 50px;
+}
+/*Menu Navegacion*/
+ul{
+    font-family:"Rubik Moonrocks", sans-serif;  
+    display: flex;
+    justify-content:space-between;
+    align-content:space-between;
+    width: 100%;
+    list-style: none;
+    padding: 4px 4px;
+    margin: 30px 0px;
+    background-color: rgba(240, 157, 5,0.6); 
+}
+a{
+    text-decoration: none;
+    color: inherit;
+ /*Titulo*/   
+}    
+.reseñas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 60px;
+    font-size: 20px;
+}
+/*Reseñas*/
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20PX;
+}
+.card{
+    background-color: rgba(240, 157, 5,0.7);
+    padding: 10px;
+    border: 1px rgba(0, 0, 0,0.3) dashed;
+    box-shadow: x y black;
+}
+.card{
+    font-size: 40px;
+}
+.e2{
+    font-size: 0px;
+}
+.far.fa-star{
+    color: white;
+}
+.fas.fa-star{
+    color: yellow;
+}
+.fas.fa-star:hover{
+    transform: scale(1.9);
+}
+.o3{
+    font-size: 25px;
+    padding: 10px 10px 10px 0;
+}
+input{
+    font-size: 15px; 
+    padding: 10px;
+    margin: 25px 0px;  
+}
+label{
+    font-size: 30px;
+}
+textarea{
+    font-size:20px;
+    width: 500px;
+    height: 100px;
+    padding: 10px; 
+    margin: 25px 0px;
+    box-sizing: border-box;
+}
+textarea:focus{
+    transform: scale(1.1);
+    background-color: rgba(93, 186, 248, 0.2);
+    border: 2px black solid;
+}  
+button{
+    margin: 10px;
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*Footer*/
+footer{
+    margin: 25px 0px;
+    font-size:15px;
+}
+/*End*/
+@media  (max-width: 768px){
+    .reseñas{
+        grid-template-columns: 0.7fr;
+    }
+}
