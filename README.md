@@ -1,1 +1,2 @@
-# proyecto-final-ecommerce--Nahuel-Ferreyra-
+Proyecto final ecommerce.
+Nahuel-Ferreyra.
