@@ -267,84 +267,94 @@ footer {
 
 /* ---------- RESPONSIVE DESIGN ---------- */
 
-@media (max-width: 780px) {
+@media (max-width: 600px) {
+  /* Topbar: se acomoda en columna */
   .topbar {
     flex-direction: column;
     align-items: center;
     gap: 15px;
     text-align: center;
-    padding: 15px;
+  }
+
+  .logo, .iyd, .search-bar, nav {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .search-bar {
     flex-direction: column;
-    width: 100%;
-  }
-
-  .search-bar input {
-    width: 80%;
+    gap: 8px;
   }
 
   .menu {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
+  /* Grid principal: se adapta automáticamente */
   .caja {
-    grid-template-columns: repeat(auto-fit);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
     gap: 15px;
-    padding: 10px;
+    place-items: center;
   }
 
-  .producto {
-    width: 95%;
-  }
-
-  .botonv, .botonc {
+  /* Eliminar posicionamiento forzado */
+  .div1, .div5, .div9 {
+    grid-area: unset;
     width: 100%;
-    font-size: 8px;
-    padding: 8px;
+    text-align: center;
+  }
+
+  .div2, .div3, .div4,
+  .div6, .div7, .div8,
+  .div10, .div11, .div12 {
+    grid-area: unset;
+  }
+
+  /* Ajustes de productos */
+  .producto {
+    width: 90%;
+    max-width: 300px;
   }
 
   .imagen img {
-    width: 90px;
-    height: 90px;
+    height: 100px;
+    width: 100px;
   }
 
-  .descripcion {
-    font-size: 13px;
+  .botonesvc {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
   }
 
-  .nombre, .precio {
+  .botonv, .botonc {
     font-size: 14px;
+    padding: 8px 10px;
+    width: 100%;
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
-  .iniciales {
-    font-size: 24px;
+  .producto {
+    max-width: 95%;
+  }
+
+  .imagen img {
+    height: 80px;
+    width: 80px;
   }
 
   .descripcion {
     font-size: 12px;
+    text-align: center;
   }
 
-  .producto {
-    width: 100%;
-  }
-
-  .imagen img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .botonv, .botonc {
+  .menu {
     font-size: 13px;
-    padding: 8px;
-  }
-
-  .menu li a {
-    font-size: 14px;
   }
 }
