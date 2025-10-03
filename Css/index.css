@@ -176,25 +176,30 @@
   .topbar {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
     text-align: center;
+    gap: 15px;
+    padding: 15px;
   }
 
   .logo, .iyd {
     justify-content: center;
     align-items: center;
-    text-align: center;
   }
 
   .search-bar {
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 80%;
+    margin-bottom: 10px;
   }
 
   .menu {
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
   }
 
   .menu li {
@@ -202,51 +207,75 @@
   }
 
   .caja {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    place-items: center;
+    gap: 15px;
+    padding: 10px;
   }
 
-  .botonv, .botonc {
-    padding: 6px 10px;
-    font-size: 14px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .producto {
-    width: 90%;
-  }
-
-  .imagen img {
-    height: 90px;
-    width: 90px;
-  }
-}
-
-@media (max-width: 480px) {
   .producto {
     width: 95%;
   }
 
-  .imagen img {
-    height: 80px;
-    width: 80px;
+  .botonv, .botonc {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px 0;
   }
 
-  .menu {
+  .botonv i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .imagen img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .descripcion {
     font-size: 13px;
+    text-align: center;
+  }
+
+  .nombre, .precio {
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Responsive para pantallas menores a 480px */
+@media (max-width: 480px) {
+  .topbar {
+    padding: 10px;
+  }
+
+  .iniciales {
+    font-size: 24px;
   }
 
   .descripcion {
     font-size: 12px;
   }
 
+  .producto {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .imagen img {
+    width: 80px;
+    height: 80px;
+  }
+
   .botonv, .botonc {
     font-size: 13px;
-    padding: 6px 8px;
+    padding: 8px;
   }
-   .botonv i {font-size: 14px;margin-right: 5px;} 
-  
+
+  .menu li a {
+    font-size: 14px;
+  }
 }
