@@ -3,59 +3,129 @@
     margin: 0;
     padding: 0;
 }
-body{
-    margin: 10px;   
-}     
-main{
-    font-size: 15px;
+
+/*Header*/   
+
+    header {
+      padding: 0; margin: 0
+    }
+    /* Barra Contenedora */
+    
+    .topbar {
+      display: flex;flex-wrap: wrap;
+      flex-direction: row;align-items: center;
+      justify-content: space-between;width: 100%;
+      background-color: white;padding: 10px 20px;
+      gap: 10px;background: linear-gradient(to right,orange,grey)
+    }
+
+    /* Logo + Iniciales */
+    
+    .logo {
+      display: flex;align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 60px;width: 60px;
+      object-fit: cover;border-radius: 50%;
+      background-color: #ff6a00;padding: 4px;
+    }
+
+     .iyd {
+       display: flex;flex-direction: column;
+       justify-content: center;align-items: center;
+    }
+
+    .iniciales {
+      font-size: 30px;font-weight: bold;
+      color: white;background-color: orange;
+      border-radius: 5px;padding: 4px 8px;
+    }
+
+    p.descripcion {
+     font-size: 12px;color: black;margin: 10px; 
+     font-weight: bold;text-align: center;
+    }
+  
+   /* Barra de búsqueda */
+    
+   .search-bar {
+      display: flex;
+      align-items: center;gap:5px;
+    }
+
+    .search-bar input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .search-bar button {
+      padding: 8px 12px;font-size: 16px;
+      border: 1px solid #ccc;
+      border-left: none;background-color:orange;
+      color: black;border-radius: 5px;cursor: pointer;
+      display: flex;align-items: center;
+      justify-content: center;
 }
-/*Logo*/
-.logo{
-    display: flex;
-    justify-content: start;
-    height: 50px;
-    width: 50px;
-}
-/*Menu Navegacion*/
-ul{
-    font-family:"Rubik Moonrocks", sans-serif;  
-    display: flex;
-    justify-content:space-between;
-    align-content:space-between;
-    width: 100%;
-    list-style: none;
-    padding: 4px 4px;
-    margin: 30px 0px;
-    background-color: rgba(240, 157, 5,0.6); 
-}
-a{
-    text-decoration: none;
-    color: inherit;
- /*Titulo*/   
-}    
+    
+
+    .search-bar i{font-size: 16px;line-height: 1;} 
+    
+    /* Menú de navegación */
+    
+    .menu {
+      list-style: none;
+      gap: 10px;display: flex;
+      justify-content: center;flex-wrap: wrap;
+      padding: 0;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .menu li a:hover {
+      color: orange;  
+    }
+ 
+h2{display: flex;justify-content: center;
+    margin: 30px;font-size: 30px;
+    font-family:"Rubik Moonrocks", sans-serif;}
+
+/*Reseñas*/
+
 .reseñas{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 60px;
+    gap: 40px;padding: 20px;
     font-size: 20px;
-}
-/*Reseñas*/
-h1{
+    }
+
+.titulo1{
   display: flex;
-  justify-content: center;
+  justify-content: center ;
   align-items: center;
-  margin: 20PX;
-}
+  margin: 20PX; 
+  }
 .card{
-    background-color: rgba(240, 157, 5,0.7);
-    padding: 10px;
+    background: linear-gradient(to right,orange,grey);
+    padding: 10px;margin: 2px;
     border: 1px rgba(0, 0, 0,0.3) dashed;
-    box-shadow: x y black;
-}
-.card{
-    font-size: 40px;
-}
+    box-shadow:2px 2px 8px rgba(0, 0, 0,0.3);
+    font-size: 40px;color: black;
+    text-shadow: 1px 1px 2px white;
+    }
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+}  
 .e2{
     font-size: 0px;
 }
@@ -82,33 +152,68 @@ label{
 }
 textarea{
     font-size:20px;
-    width: 500px;
+    width: 100%;
     height: 100px;
     padding: 10px; 
     margin: 25px 0px;
     box-sizing: border-box;
 }
 textarea:focus{
-    transform: scale(1.1);
-    background-color: rgba(93, 186, 248, 0.2);
+    transform: scale(0.9);
+    background-color: rgba(146, 147, 148, 0.2);
     border: 2px black solid;
 }  
 button{
-    margin: 10px;
-    width: 100px;
-    height: 25px;
-    font-size: 20px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+  padding: 10px 20px;font-size: 18px;
+  background-color: white;border: none;
+  border-radius: 5px;cursor: pointer;color: black;
 }
+button:hover {
+  background-color: white;
+  color: orange;
+}
+
 /*Footer*/
 footer{
     margin: 25px 0px;
     font-size:15px;
 }
-/*End*/
-@media  (max-width: 768px){
-    .reseñas{
-        grid-template-columns: 0.7fr;
+
+  /*Responsive*/
+
+    @media (max-width: 780px) {
+
+    .topbar {
+    flex-direction: column;
+    align-items: center;align-content: center;
+    text-align: center;
+    gap: 15px; 
     }
+
+  .logo, .iyd {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    }
+
+  .menu li {
+    margin: 5px 0;
+    } 
+
+  .reseñas{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;padding: 20px;
+}
 }

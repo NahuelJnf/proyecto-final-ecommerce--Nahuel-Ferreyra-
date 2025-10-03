@@ -1,21 +1,232 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+*{box-sizing: border-box;margin: 0;padding: 0;}
+    
+    /*Header*/   
 
-body{margin: 5px;}
+    header {
+      padding: 0; margin: 0
+    }
+    /* Barra Contenedora */
+    
+    .topbar {
+      display: flex;flex-wrap: wrap;
+      flex-direction: row;align-items: center;
+      justify-content: space-between;width: 100%;
+      background-color: white;padding: 10px 20px;
+      gap: 10px;background: linear-gradient(to right,orange,grey)
+    }
 
-.contenedor{display: flex;align-items: center;justify-content:center;width: 100%;}
+    /* Logo + Iniciales */
+    
+    .logo {
+      display: flex;align-items: center;
+      gap: 10px;
+    }
 
-.logo{display: flex;height: 50px;width: 50px;gap: 20px;}
+    .logo img {
+      height: 60px;width: 60px;
+      object-fit: cover;border-radius: 50%;
+      background-color: #ff6a00;padding: 4px;
+    }
 
-.titulo1{font-size: 12px;color: black;margin-right: 20px;}
+     .iyd {
+       display: flex;flex-direction: column;
+       justify-content: center;align-items: center;
+    }
 
-.parrafo1{font-size: 12px;color: grey;margin-right: 20px;}
+    .iniciales {
+      font-size: 30px;font-weight: bold;
+      color: white;background-color: orange;
+      border-radius: 5px;padding: 4px 8px;
+    }
 
-.search{width: 20%;margin-right: 50px;}
+    p.descripcion {
+     font-size: 12px;color: black;margin: 10px; 
+     font-weight: bold;text-align: center;
+    }
+  
+   /* Barra de búsqueda */
+    
+   .search-bar {
+      display: flex;
+      align-items: center;gap:5px;
+    }
 
-.input1{width: 100%;font-size: 15px;}
+    .search-bar input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 14px;
+    }
 
-ul,li a{font-size: 15px;text-decoration: none;color:rgb(199, 131, 4);list-style: none;}
+    .search-bar button {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-left: none;
+      background-color:orange;
+      color: black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search-bar i{font-size: 12px;} 
+    
+    /* Menú de navegación */
+    
+    .menu {
+      list-style: none;
+      gap: 10px;display: flex;
+      justify-content: center;flex-wrap: wrap;
+      padding: 0;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .menu li a:hover {
+      color: orange;  
+    }
+    
+    /*Grid <Main>*/
+
+    .caja{
+      display: grid;grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 20px 0.9fr 20px 0.9fr 20px 0.9fr;
+      grid-column-gap: 0px;padding: 5px;margin:5px;;
+      grid-row-gap: 10px;   place-items: center;
+     }
+
+     /*Grid Ubicacion*/
+
+    .div1 {grid-area: 1/2/2/3;}
+    .div2 {grid-area: 2/1/3/2;}
+    .div3 {grid-area: 2/2/3/3;}
+    .div4 {grid-area: 2/3/3/4;}
+    .div5 {grid-area: 3/2/4/3;}
+    .div6 {grid-area: 4/1/5/2;}
+    .div7 {grid-area: 4/2/5/3;}
+    .div8 {grid-area: 4/3/5/4;}
+    .div9 {grid-area: 5/2/6/3;}
+    .div10 {grid-area: 6/1/7/2;}
+    .div11 {grid-area: 6/2/7/3;}
+    .div12 {grid-area: 6/3/7/4;}
+
+    div {margin: 10px;}
+
+    /*Articulos*/
+
+    .div1, .div5, .div9{
+      font-size: 15px;font-weight: bold;
+      background-color: orange;border-radius: 5px;
+      border: 0.5px grey double;padding: 10px;
+    }
+
+    /*Tarjetas Articulos*/
+ 
+    .producto{background:#ffffff;
+           border-radius:12px;padding:14px;margin: 5px;;
+           border:1px solid #ddd;width: 250px;
+           box-shadow: 0 4px 10px rgba(255, 106, 0, 0.2);
+           transition: transform 0.2s ease, box-shadow 0.2s ease;           
+           }
+
+    .imagen{display: flex;justify-content: center;align-items: center;align-content: center;margin-bottom: 5px;}
+    .imagen img{height: 100px;width: 100px;transition: transform 0.3s ease, filter 0.3s ease;}       
+    .imagen img:hover {transform: scale(1.2);filter: brightness(1.2) drop-shadow(0 0 5px orange);} 
+    .nyp{display: flex;justify-content: space-around;align-items: center;align-content: center;}
+    .nombre{display: flex;font-weight:800;font-size:15px;color: black;align-items: center;align-content: center;}
+    .precio{display: flex;font-weight:800;font-size:15px;color: #ff6a00;align-items: center;align-content: center;}
+    .descripcion{display: flex;font-size:13px;color:#666;justify-content:center;align-content: center;align-items: center;}
+    .botonesvc{display:flex;justify-content:center;align-items: center;align-content: center;}
+    .botonv{display: flex;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;color:#fff;background:#ff6a00;align-items: center;align-content: center;}
+    .botonv:hover {background-color: #e65c00;color: white;}
+    .botonc{display: flex;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;color:#fff;background:black;align-items: center;align-content: center;}
+    .botonc:hover {background-color: #333;color: orange;}
+
+    /*Flotante*/
+
+    /* Botón flotante de WhatsApp */
+    .flotante {
+      position: fixed;bottom: 20px;
+      right: 20px;background-color: #25D366;
+      color: white;border-radius: 50%;
+      padding: 15px;font-size: 25px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 999;transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+    }
+
+    .flotante:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+      color: white;
+    }
+    
+    /*Footer*/
+    footer{margin: 25px 0px;font-size:15px;}
+
+    /* Responsive */
+
+    @media (max-width: 780px) {
+
+    .topbar {
+    flex-direction: column;
+    align-items: center;align-content: center;
+    text-align: center;
+    gap: 15px; 
+    }
+
+  .logo, .iyd {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    }
+
+  .menu li {
+    margin: 5px 0;
+    }
+
+ .caja {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;place-items: center;
+  }
+  
+  @media (max-width: 480px) {
+  .topbar {
+    padding: 10px;
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  .imagen img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .menu {
+    font-size: 13px;
+  }
+
+  .descripcion {
+    font-size: 12px;
+  }
+  }
+  }
