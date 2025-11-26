@@ -2,210 +2,274 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <link rel="icon" type="image/png" href="/Imagenes/jnf.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Moonrocks&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="Css/index.css">
-    <title>JNF Company©</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/Imagenes/jnf.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Moonrocks&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Css/index.css">
+  <title>JNF Company©</title>
 </head>
 
 <body>
-    <header>
-        <!--barra superior-->
-        <div class="topbar">
-        <!-- Logo + texto -->
-            <div class="logo">
-             <img src="/Imagenes/jnf.jpg" alt="Logo de la empresa"></div>
-            <div class="iyd"><span class="iniciales">JNF</span><p class="descripcion">Productos Tecnologicos</p></div>
-        
-         <!-- Barra de búsqueda -->
-            <div class="search-bar">
-             <input type="text" placeholder="Buscar...">
-             <button><i class="fas fa-search"></i></button></div>
-        <!-- Menú de navegación -->
-        <nav>    
+  <header>
+    <!--barra superior-->
+    <div class="topbar">
+      <!-- Logo + texto -->
+      <div class="logo">
+        <img src="/Imagenes/jnf.jpg" alt="Logo de la empresa">
+      </div>
+      <div class="iyd"><span class="iniciales">JNF</span>
+        <p class="descripcion">Productos Tecnologicos</p>
+      </div>
+
+      <!-- Barra de búsqueda -->
+      <div class="search-bar" role="search" aria-label="Barra de búsqueda">
+        <input id="buscador" type="text" placeholder="Buscar..." aria-label="Buscar productos"> <button
+          aria-label="Buscar"><i class="fas fa-search"></i></button>
+      </div>
+      <!-- Menú de navegación -->
+      <nav>
         <ul class="menu">
-             <li><a href="/index.html">Inicio</a></li>
-             <li><a href="https://wa.me/5491163357973" target="_blank">Contacto</a></li>
-            <li><a href="/indexreseñas.html">Reseñas</a></li></ul>
-        </nav>
-        </div>
-    </header>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="https://wa.me/5491163357973" target="_blank">Contacto</a></li>
+          <li><a href="/indexreseñas.html">Reseñas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <!--Contenido-->
-    
-        <main>
-        <div class="caja">
+  <!--Contenido-->
 
-        <!--Auriculares-->
+  <main>
+    <div class="caja">
 
-    <div class="div1">Auriculares</div>
+      <!--Auriculares-->
 
-         <div class="div2">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/auricular1.jpg" alt="Auricular TWA-90N Negro"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Auricular TWA-90N Negro</b></p></div>
-                <div class="precio">$10.000,00</div>
+      <div class="div1">Auriculares</div>
+
+      <div class="div2">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/auricular1.jpg" alt="Auricular TWA-90N Negro"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Auricular TWA-90N Negro</b></p>
             </div>
-            <div class="descripcion">Conexión inalámbrica, cuenta con touch multifunción y control de
-                                     volumen.Estuche de carga con Display Led.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-            </article>
-         </div>
+            <div class="precio">$10.000,00</div>
+          </div>
+          <div class="descripcion">Conexión inalámbrica, cuenta con touch multifunción y control de
+            volumen.Estuche de carga con Display Led.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Auricular TWA-90N Negro" data-precio="$10.000,00">Agregar al
+              carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
 
-         <div class="div3">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/auricular2.jpg" alt="Auriculares Tune 520 Negro"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Auriculares Tune 520 Negro</b></p></div>
-                <div class="precio">$20.000,00</div>
+      <div class="div3">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/auricular2.jpg" alt="Auriculares Tune 520 Negro"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Auriculares Tune 520 Negro</b></p>
             </div>
-            <div class="descripcion">Cuenta hasta 57 horas de duración de batería y con
-                        solo 5 minutos de carga.Tiene un diseño ligero, cómodo y plegable.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-          </article>
-         </div>
+            <div class="precio">$20.000,00</div>
+          </div>
+          <div class="descripcion">Cuenta hasta 57 horas de duración de batería y con
+            solo 5 minutos de carga.Tiene un diseño ligero, cómodo y plegable.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Auriculares Tune 520 Negro" data-precio="$20.000,00">Agregar al
+              carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
 
-         <div class="div4">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/auricular3.jpg" alt="Auriculares C52/BZ Negro"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Auriculares C52/BZ Negro</b></p></div>
-                <div class="precio">$15.000,00</div>
+      <div class="div4">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/auricular3.jpg" alt="Auriculares C52/BZ Negro"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Auriculares C52/BZ Negro</b></p>
             </div>
-            <div class="descripcion">Comodidad para llevarlos puestos todo el día sin renunciar a un buen
-                        sonido, aportan estilo, versatilidad y facilidad de uso.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-          </article>
-         </div>
+            <div class="precio">$15.000,00</div>
+          </div>
+          <div class="descripcion">Comodidad para llevarlos puestos todo el día sin renunciar a un buen
+            sonido, aportan estilo, versatilidad y facilidad de uso.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Auriculares C52/BZ Negro" data-precio="$15.000,00">Agregar al
+              carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
 
-        <!--Monitores-->
+      <!--Monitores-->
 
-        <div class="div5">Monitores</div>
+      <div class="div5">Monitores</div>
 
-         <div class="div6">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/monitor1.jpg" alt="Smart TV LED 43" 43P610/77"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Smart TV LED 43" 43P610/77</b></p></div>
-                <div class="precio">$950.000,00</div>
+      <div class="div6">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/monitor1.jpg" alt="Smart TV LED 43 43P610/77"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Smart TV LED 43" 43P610/77</b></p>
             </div>
-            <div class="descripcion">Podrás ajustar la TV con mejoras de la imagen como: Pixel Plus HD,
-                                     estándar, juego, película, crystal clear, entre muchos otros.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-          </article>
-         </div>
+            <div class="precio">$950.000,00</div>
+          </div>
+          <div class="descripcion">Podrás ajustar la TV con mejoras de la imagen como: Pixel Plus HD,
+            estándar, juego, película, crystal clear, entre muchos otros.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Smart TV LED 43 43P610/77" data-precio="$950.000,00">Agregar al
+              carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
 
-         <div class="div7">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/monitor2.jpg" alt="Smart TV Led 43” L43S5400-F"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Smart TV Led 43” L43S5400-F</b></p></div>
-                <div class="precio">$800.000,00</div>
+      <div class="div7">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/monitor2.jpg" alt="Smart TV Led 43” L43S5400-F"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Smart TV Led 43” L43S5400-F</b></p>
             </div>
-            <div class="descripcion">Con un 100% volumen de color, la tecnología Quantum Dot toma la luz y la
-                                     convierte en colores impresionantes y llamativos.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-          </article>
-         </div>
+            <div class="precio">$800.000,00</div>
+          </div>
+          <div class="descripcion">Con un 100% volumen de color, la tecnología Quantum Dot toma la luz y la
+            convierte en colores impresionantes y llamativos.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Smart TV Led 43 L43S5400-F" data-precio="$800.000,00">Agregar al
+              carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
 
-         <div class="div8">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/monitor3.jpg" alt="Smart TV 55” 4K QLED Q65D"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Smart TV 55” 4K QLED Q65D</b></p></div>
-                <div class="precio">$915.000,00</div>
+      <div class="div8">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/monitor3.jpg" alt="Smart TV 55” 4K QLED Q65D"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Smart TV 55” 4K QLED Q65D</b></p>
             </div>
-            <div class="descripcion">Quantum HDR resalta los detalles y el contraste, para que puedas
-                        experimentar toda la potencia en cada imagen.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-          </article>
-         </div>
+            <div class="precio">$915.000,00</div>
+          </div>
+          <div class="descripcion">Quantum HDR Q65D resalta cada detalles y el contraste, para que puedas
+            experimentar toda la potencia en cada imagen.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Smart TV 55 4K QLED Q65D" data-precio="$915.000,00">Agregar al
+              carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
 
-        <!--Notebook-->
+      <!--Notebook-->
 
-        <div class="div9">Notebooks</div>
+      <div class="div9">Notebooks</div>
 
-         <div class="div10">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/notebook1.jpg" alt="Notebook TDell Latituder 3120"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Notebook Dell Latituder 3120</b></p></div>
-                <div class="precio">$950.000,00</div>
+      <div class="div10">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/notebook1.jpg" alt="Notebook TDell Latituder 3120"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Notebook Dell Latituder 3120</b></p>
             </div>
-            <div class="descripcion">Cuenta con una tarjeta de memoria RAM de 4 GB DDR4 de 2933 Mhz.Posee un
-                                     almacenamiento SSD de 128 GB SSD.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-          </article>
-         </div>
+            <div class="precio">$950.000,00</div>
+          </div>
+          <div class="descripcion">Cuenta con una tarjeta de memoria RAM de 4 GB DDR4 de 2933 Mhz.Posee un
+            almacenamiento SSD de 128 GB SSD.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Notebook Dell Latituder 3120" data-precio="$950.000,00">Agregar
+              al carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
 
-         <div class="div11">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/notebook2.jpg" alt="Notebook WE632 FAST15.6" 512GB"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Notebook WE632 FAST15.6" 512GB</b></p></div>
-                <div class="precio">$800.000,00</div>
+      <div class="div11">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/notebook2.jpg" alt="Notebook WE632 FAST 15.6 512GB"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Notebook WE632 FAST15.6" 512GB</b></p>
             </div>
-            <div class="descripcion">512 GB de almacenamiento, rendimiento rápido y confiable para una alta
-                                     productividad y múltiples tareas.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-          </article>
-         </div>
+            <div class="precio">$800.000,00</div>
+          </div>
+          <div class="descripcion">512 GB de almacenamiento, rendimiento rápido y confiable para una alta
+            productividad y múltiples tareas.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Notebook WE632 FAST15.6 512GB" data-precio="$800.000,00">Agregar
+              al carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
 
-         <div class="div12">
-          <article class="producto">
-            <div class="imagen"><img src="/Imagenes/notebook3.jpg" alt="Notebook Celeron DW  SJHS 14.1"></div>
-            <div class="nyp">
-                <div class="nombre"><p><b>Notebook Celeron DW  SJHS 14.1"</b></p></div>
-                <div class="precio">$915.000,00</div>
+      <div class="div12">
+        <article class="producto">
+          <div class="imagen"><img src="/Imagenes/notebook3.jpg" alt="Notebook Celeron DW  SJHS 14.1"></div>
+          <div class="nyp">
+            <div class="nombre">
+              <p><b>Notebook Celeron DW SJHS 14.1</b></p>
             </div>
-            <div class="descripcion">Perfecta para tus tareas diarias, videollamadas en alta calidad, ver series o películas, y
-                                     navegar por tus contenidos favoritos.</div>
-            <div class="botonesvc">
-            <a class="botonv" href="#"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-            <a class="botonc" href="#">Comprar</a></div>
-          </article>
-         </div>
-        </div>
-     
-         <!--Flotante-->
+            <div class="precio">$915.000,00</div>
+          </div>
+          <div class="descripcion">Perfecta para tus tareas diarias, videollamadas en alta calidad, ver series o
+            películas, y navegar por tus contenidos.</div>
+          <div class="botonesvc">
+            <a class="botonv add-carrito" data-nombre="Notebook Celeron DW SJHS 14.1" data-precio="$915.000,00">Agregar
+              al carrito</a>
+            <a class="botonc">Comprar Producto</a>
+          </div>
+        </article>
+      </div>
+    </div>
 
-        <a href="https://wa.me/5491163357973" class="flotante" target="_blank" title="Escribinos por WhatsApp">
-         <i class="fab fa-whatsapp"></i>
-        </a>
-        </main>
-        <footer>
-          <p><b>©2025 Nahuel Ferreyra.Todos los derechos reservados.</b></p>
-        </footer>
-    </body>
+    <!--Flotante Whattsapp-->
+
+    <a href="https://wa.me/5491163357973" class="flotante" target="_blank" title="Escribinos por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Carrito flotante -->
+    <div class="carrito-flotante" id="carritoBtn">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="carrito-count">0</span>
+    </div>
+
+    <!-- Ventana del carrito -->
+    <div class="carrito-panel" id="carritoPanel">
+      <h3>Carrito</h3>
+      <div id="carrito-items"></div>
+      <button id="vaciarCarrito">Vaciar carrito</button>
+      <button id="comprarTodo">Comprar todo</button>
+    </div>
+  </main>
+
+  <!-- Modal de pago -->
+  <div id="modalPago" class="modal">
+    <div class="modal-content">
+      <span id="cerrarModal" class="close">&times;</span>
+      <h2>Resumen de compra</h2>
+      <div id="resumenCompra"></div>
+      <button id="confirmarPago">Confirmar compra</button>
+    </div>
+  </div>
+
+  <footer>
+    <p><b>©2025 Nahuel Ferreyra.Todos los derechos reservados.</b></p>
+  </footer>
+
+  <script src="./Js/index.js"></script>
+</body>
+
 </html>
-
-
-
-        
-                  

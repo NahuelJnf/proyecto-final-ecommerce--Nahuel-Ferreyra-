@@ -1,219 +1,314 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/*Header*/   
-
-    header {
-      padding: 0; margin: 0
-    }
-    /* Barra Contenedora */
-    
-    .topbar {
-      display: flex;flex-wrap: wrap;
-      flex-direction: row;align-items: center;
-      justify-content: space-between;width: 100%;
-      background-color: white;padding: 10px 20px;
-      gap: 10px;background: linear-gradient(to right,orange,grey)
-    }
-
-    /* Logo + Iniciales */
-    
-    .logo {
-      display: flex;align-items: center;
-      gap: 10px;
-    }
-
-    .logo img {
-      height: 60px;width: 60px;
-      object-fit: cover;border-radius: 50%;
-      background-color: #ff6a00;padding: 4px;
-    }
-
-     .iyd {
-       display: flex;flex-direction: column;
-       justify-content: center;align-items: center;
-    }
-
-    .iniciales {
-      font-size: 30px;font-weight: bold;
-      color: white;background-color: orange;
-      border-radius: 5px;padding: 4px 8px;
-    }
-
-    p.descripcion {
-     font-size: 12px;color: black;margin: 10px; 
-     font-weight: bold;text-align: center;
-    }
-  
-   /* Barra de búsqueda */
-    
-   .search-bar {
-      display: flex;
-      align-items: center;gap:5px;
-    }
-
-    .search-bar input {
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 100%;
-      font-size: 14px;
-    }
-
-    .search-bar button {
-      padding: 8px 12px;font-size: 16px;
-      border: 1px solid #ccc;
-      border-left: none;background-color:orange;
-      color: black;border-radius: 5px;cursor: pointer;
-      display: flex;align-items: center;
-      justify-content: center;
+/* Header */
+header {
+  width: 100%;
 }
-    
 
-    .search-bar i{font-size: 16px;line-height: 1;} 
-    
-    /* Menú de navegación */
-    
-    .menu {
-      list-style: none;
-      gap: 10px;display: flex;
-      justify-content: center;flex-wrap: wrap;
-      padding: 0;
-    }
-
-    .menu li a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      font-size: 15px;
-    }
-
-    .menu li a:hover {
-      color: orange;  
-    }
- 
-h2{display: flex;justify-content: center;
-    margin: 30px;font-size: 30px;
-    font-family:"Rubik Moonrocks", sans-serif;}
-
-/*Reseñas*/
-
-.reseñas{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;padding: 20px;
-    font-size: 20px;
-    }
-
-.titulo1{
+.topbar {
   display: flex;
-  justify-content: center ;
+  font-size: 18px;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 20PX; 
-  }
-.card{
-    background: linear-gradient(to right,orange,grey);
-    padding: 10px;margin: 2px;
-    border: 1px rgba(0, 0, 0,0.3) dashed;
-    box-shadow:2px 2px 8px rgba(0, 0, 0,0.3);
-    font-size: 40px;color: black;
-    text-shadow: 1px 1px 2px white;
-    }
-.card:hover {
-    transform: scale(1.02);
-    box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
-}  
-.e2{
-    font-size: 0px;
+  justify-content: space-between;
+  background: linear-gradient(to right, orange, grey);
+  padding: 10px 20px;
+  gap: 10px;
 }
-.far.fa-star{
+
+.weather {
+    display: inline-flex;       /* Ícono y texto alineados horizontalmente */
+    align-items: center;        /* Centrado vertical */
+    gap: 8px;                   /* Espacio entre ícono y texto */
+    padding: 5px 12px;          /* Espaciado interno */
+    border-radius: 25px;        /* Bordes redondeados tipo “pill” */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo transparente suave */
     color: white;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.2); /* Sombra ligera */
+    transition: background-color 0.5s ease, transform 0.3s ease;
 }
-.fas.fa-star{
-    color: yellow;
+
+.weather img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;        /* Ícono circular */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2px;
 }
-.fas.fa-star:hover{
-    transform: scale(1.9);
+
+/* Logo e iniciales */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
-.o3{
-    font-size: 25px;
-    padding: 10px 10px 10px 0;
+
+.logo img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #ff6a00;
+  padding: 4px;
 }
-input{
-    font-size: 15px; 
-    padding: 10px;
-    margin: 25px 0px;  
+
+.iyd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-label{
-    font-size: 30px;
+
+.iniciales {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+  border-radius: 5px;
+  border: solid 0.5px rgb(0, 0, 0, 0.5);
+  padding: 4px 8px;
 }
-textarea{
-    font-size:20px;
-    width: 100%;
-    height: 100px;
-    padding: 10px; 
-    margin: 25px 0px;
-    box-sizing: border-box;
+
+.descripcion {
+  font-size: 12px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
 }
-textarea:focus{
-    transform: scale(0.9);
-    background-color: rgba(146, 147, 148, 0.2);
-    border: 2px black solid;
-}  
-button{
-  padding: 10px 20px;font-size: 18px;
-  background-color: white;border: none;
-  border-radius: 5px;cursor: pointer;color: black;
+
+/* Barra de búsqueda */
+.search-bar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 5px;
+  width: 300px;
 }
-button:hover {
-  background-color: white;
+
+.search-bar input {
+  flex: 1;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  font-size: 16px;
+}
+
+/* Menú de navegación */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: color 0.3s;
+
+}
+
+.menu li a:hover {
   color: orange;
 }
 
-/*Footer*/
-footer{
-    margin: 25px 0px;
-    font-size:15px;
+/* Título */
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 30px;
+  font-family: "Rubik Moonrocks", sans-serif;
 }
 
-  /*Responsive*/
+/* Card general */
+.card {
+  background: linear-gradient(to right, orange, grey);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px rgba(0, 0, 0, 0.3) dashed;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-    @media (max-width: 780px) {
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
 
-    .topbar {
+/* Comentarios */
+.n1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.o3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Formulario dentro de card */
+
+.card>div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  /* ocupa toda la card */
+  font-size: 16px;
+}
+
+.card form input,
+.card form textarea {
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.card form textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.card form button {
+  align-self: center;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card form button:hover {
+  color: orange;
+}
+
+/* Estrellas */
+.fas.fa-star {
+  font-size: 30px;
+  color: yellow;
+  margin-right: 4px;
+}
+
+.far.fa-star {
+  font-size: 30px;
+  color: white;
+  margin-right: 4px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 2em;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.rating input:checked~label,
+.rating label:hover,
+.rating label:hover~label {
+  color: gold;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+  outline: 2px solid orange;
+  outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 15px;
+  margin: 25px 0;
+}
+
+/* Responsive */
+@media(max-width: 780px) {
+  .topbar {
     flex-direction: column;
-    align-items: center;align-content: center;
-    text-align: center;
-    gap: 15px; 
-    }
-
-  .logo, .iyd {
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    }
+    gap: 15px;
+  }
 
   .search-bar {
     flex-direction: column;
     align-items: center;
-    }
+  }
 
   .menu {
     flex-direction: column;
-    align-items: center;
     gap: 5px;
-    }
-
-  .menu li {
-    margin: 5px 0;
-    } 
-
-  .reseñas{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;padding: 20px;
+  }
 }
+
+@media(max-width:480px) {
+  .rating label {
+    font-size: 20px;
+  }
+
+  textarea {
+    height: 70px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .n1 {
+    font-size: 18px;
+  }
+
+  .card form button {
+    width: 100%;
+    /* Botón más accesible en pantallas pequeñas */
+    max-width: 200px;
+  }
 }

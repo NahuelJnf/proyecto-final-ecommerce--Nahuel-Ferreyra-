@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="es">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/Imagenes/jnf.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -13,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Moonrocks&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="Css/indexreseñas.css">
+    <link rel="stylesheet" href="/Css/indexreseñas.css">
     <title>JNF Company©</title><meta name="description" content="Leé reseñas reales de nuestros clientes sobre productos tecnológicos JNF. Confiabilidad, calidad y experiencia.">
 </head>
 
@@ -21,6 +20,7 @@
     <header>
         <!--barra superior-->
         <div class="topbar">
+         <div id="weather" style="font-size:14px; color:white;"></div>
         <!-- Logo + texto -->
             <div class="logo">
              <img src="/Imagenes/jnf.jpg" alt="Logo de la empresa"></div>
@@ -33,9 +33,9 @@
         <!-- Menú de navegación -->
         <nav>    
         <ul class="menu">
-             <li><a href="/index.html">Inicio</a></li>
+             <li><a href="index.html">Inicio</a></li>
              <li><a href="https://wa.me/5491163357973" target="_blank">Contacto</a></li>
-            <li><a href="/indexreseñas.html">Reseñas</a></li></ul>
+            <li><a href="indexreseñas.html">Reseñas</a></li></ul>
         </nav>
         </div>
     </header>
@@ -45,7 +45,7 @@
    <section class="reseñas">
       <section class="card">
          <div class="n1">Manuel</div>
-         <div class="e2">estrellas</div>
+         <div class="e2"></div>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
@@ -56,7 +56,7 @@
       </section>
       <section class="card">
          <div class="n1">Franco</div>
-         <div class="e2">estrellas</div>
+         <div class="e2"></div>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
@@ -67,40 +67,42 @@
       </section>
       <section class="card">
          <div class="n1">Carina</div>
-         <div class="e2">estrellas</div>
+         <div class="e2"></div>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
          <i class="fas fa-star"></i>
-         <div class="o3">He estado usando productos sus desde que compre monitores y otras cosas hace más de una década.
+         <div class="o3">He estado usando sus productos desde que compre monitores y otras cosas hace más de una década.
             He probado toneladas de marcas, pero siempre termino volviendo.</div>
       </section>
       <section class="card">
          <div class="n1">
             <form action="https://formspree.io/f/xgvlpevq" method="post">
-               <label for="nombre">Nombre:
-                  <input id="nombre" type="text" name="Nombre" required placeholder="Escriba aqui"></label>
-               <label for="email">Email:
-                  <input id="email" type="email" name="Email" required placeholder="Escriba aqui"></label>
-               <br>
-               <input type="radio" id="estrella-1" name="estrella" value="5">
-               <label for="estrella-1" class="fas fa-star"></label>
-               <input type="radio" id="estrella-2" name="estrella" value="5">
-               <label for="estrella-2" class="fas fa-star"></label>
-               <input type="radio" id="estrella-3" name="estrella" value="5">
-               <label for="estrella-3" class="fas fa-star"></label>
-               <input type="radio" id="estrella-4" name="estrella" value="5">
-               <label for="estrella-4" class="fas fa-star"></label>
-               <input type="radio" id="estrella-5" name="estrella" value="5">
-               <label for="estrella-5" class="fas fa-star"></label>
-         </div>
-         <div class="ta">
-            <textarea required placeholder="Escriba Aqui" name="comentario"></textarea></label>
-         </div>
-         <div class="su">
-            <button type="submit" required>Enviar</button>
-            </form>
+    <label for="nombre">Nombre:
+        <input id="nombre" type="text" name="Nombre" required placeholder="Escriba aquí">
+    </label>
+    <label for="email">Email:
+        <input id="email" type="email" name="Email" required placeholder="Escriba aquí">
+    </label>
+
+    <!-- Estrellas -->
+    <div class="rating">
+        <input type="radio" id="star5" name="estrella" value="5" required>
+        <label for="star5" title="5 estrellas">&#9733;</label>
+        <input type="radio" id="star4" name="estrella" value="4">
+        <label for="star4" title="4 estrellas">&#9733;</label>
+        <input type="radio" id="star3" name="estrella" value="3">
+        <label for="star3" title="3 estrellas">&#9733;</label>
+        <input type="radio" id="star2" name="estrella" value="2">
+        <label for="star2" title="2 estrellas">&#9733;</label>
+        <input type="radio" id="star1" name="estrella" value="1">
+        <label for="star1" title="1 estrella">&#9733;</label>
+    </div>
+
+    <textarea required placeholder="Dejanos Aqui tu Opinion..." name="comentario"></textarea>
+    <button type="submit">Enviar</button>
+</form>
          </div>
       </section>
    </section>
@@ -108,6 +110,7 @@
    <footer>
       <p><b>©2025 Nahuel Ferreyra.Todos los derechos reservados.</b></p>
    </footer>
+   <script src="/Js/idexreseñas.js"></script>
 </body>
 
 </html>
